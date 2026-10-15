@@ -35,14 +35,14 @@ title: Accueil
         {% if projets_perso.size == 0 %}<p class="empty">Aucun projet personnel publié pour le moment.</p>{% endif %}
       </div></div>
     </section>
-    <section id="competences"><h2><span class="sym">$</span>cat competences-bts.md</h2>
+    <section id="competences"><h2><span class="sym">$</span>Compétences acquises</h2>
       <div class="scroll"><table><thead><tr><th rowspan="2">[ compétence ]</th>{% if projets_ecole.size > 0 %}<th class="grp" colspan="{{ projets_ecole.size }}">[ école ]</th>{% endif %}{% if projets_perso.size > 0 %}<th class="grp" colspan="{{ projets_perso.size }}">[ perso ]</th>{% endif %}</tr><tr>
       {% for p in projets_ecole %}<th class="c col-sep"><a href="{{ p.url | relative_url }}" aria-label="Ouvrir : {{ p.title }}">{{ forloop.index }}</a></th>{% endfor %}{% for p in projets_perso %}<th class="c col-sep"><a href="{{ p.url | relative_url }}" aria-label="Ouvrir : {{ p.title }}">{{ forloop.index }}</a></th>{% endfor %}
       </tr></thead><tbody>
       {% for c in site.data.competences %}<tr><td class="skill">{{ c.libelle }}</td>{% for p in projets_ecole %}<td class="c">{% if p.competences contains c.code %}<a class="chk" href="{{ p.url | relative_url }}" aria-label="{{ c.libelle }} — {{ p.title }}">✓</a>{% endif %}</td>{% endfor %}{% for p in projets_perso %}<td class="c">{% if p.competences contains c.code %}<a class="chk" href="{{ p.url | relative_url }}" aria-label="{{ c.libelle }} — {{ p.title }}">✓</a>{% endif %}</td>{% endfor %}</tr>{% endfor %}
-      </tbody></table></div><p class="note"># cliquer sur une coche ouvre le projet correspondant</p>
+      </tbody></table></div><p class="note"># Cliquer sur une coche ouvre le projet correspondant</p>
     </section>
-    <section id="contact"><h2><span class="sym">$</span>contact</h2><p class="contact-intro">Une question sur un projet, une proposition de stage ou une collaboration ?</p><div class="contact-list">
+    <section id="contact"><h2><span class="sym">$</span>Me contacter</h2><p class="contact-intro">Une question sur un projet, une proposition de stage ou une collaboration ?</p><div class="contact-list">
       {% if site.email != "" %}<a class="cell" href="mailto:{{ site.email }}"><span class="k">[ e-mail ]</span><span class="v">{{ site.email }}</span></a>{% endif %}
       {% if site.linkedin != "" %}<a class="cell" href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer"><span class="k">[ linkedin ]</span><span class="v">Profil LinkedIn ↗</span></a>{% endif %}
       {% if site.github_username != "" and site.github_username != "YOUR-USERNAME" %}<a class="cell" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer"><span class="k">[ github ]</span><span class="v">github.com/{{ site.github_username }} ↗</span></a>{% endif %}
