@@ -3,7 +3,7 @@ title: "Réalisation d'un portfolio HTML sur GitHub"
 date: 2026-10-15
 type: ecole
 resume: "Création et personnalisation d'un portfolio en ligne pour présenter mon parcours en BTS SIO, mes projets et mes compétences."
-competences: [c1, c4]
+competences: [c3, c6]
 ---
 
 ## Contexte
