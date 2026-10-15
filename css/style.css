@@ -1,14 +1,14 @@
 :root
 {
   color-scheme: dark;
-  --bg: #080d0a;
-  --panel: #0f1713;
-  --bar: #162a1f;
-  --line: #1c2b22;
-  --text: #dfe9e0;
-  --muted: #7f9185;
-  --dim: #4d5e53;
-  --green: #4ade80;
+  --bg: #081426;
+  --panel: #0f1b2e;
+  --bar: #172b49;
+  --line: #263b59;
+  --text: #f1f5f9;
+  --muted: #a6b8d2;
+  --dim: #7890b2;
+  --blue: #60a5fa;
   --red: #ff5f56;
   --yellow: #f5c451;
   --mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
@@ -44,7 +44,7 @@ a
 
 a:focus-visible
 {
-  outline: 2px solid var(--green);
+  outline: 2px solid var(--blue);
   outline-offset: 4px;
 }
 
@@ -60,7 +60,7 @@ header
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(8,13,10,.94);
+  background: rgba(8,20,38,.94);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -83,7 +83,7 @@ header
 
 .brand:hover
 {
-  color: var(--green);
+  color: var(--blue);
 }
 
 nav
@@ -108,7 +108,7 @@ nav a:hover, nav a.active
 nav a.active::before
 {
   content: "$ ";
-  color: var(--green);
+  color: var(--blue);
 }
 
 main
@@ -176,7 +176,7 @@ main
 
 .dot.g
 {
-  background: var(--green);
+  background: var(--blue);
 }
 
 .term-title
@@ -205,7 +205,7 @@ main
 .prompt::before
 {
   content: "$ ";
-  color: var(--green);
+  color: var(--blue);
 }
 
 .hero h1
@@ -231,7 +231,7 @@ main
 
 .out
 {
-  color: var(--green);
+  color: var(--blue);
   opacity: .88;
   margin-top: 4px;
   min-height: 1.65em;
@@ -248,7 +248,7 @@ main
   display: inline-block;
   width: 8px;
   height: 15px;
-  background: var(--green);
+  background: var(--blue);
   vertical-align: -2px;
   margin-left: 3px;
   animation: blink 1.1s steps(1) infinite;
@@ -275,8 +275,8 @@ main
   display: inline-flex;
   justify-content: center;
   padding: 9px 16px;
-  border: 1px solid var(--green);
-  color: var(--green);
+  border: 1px solid var(--blue);
+  color: var(--blue);
   border-radius: 2px;
   font-size: 13.5px;
   transition: background .15s, color .15s;
@@ -284,15 +284,15 @@ main
 
 .btn.solid
 {
-  background: var(--green);
-  color: #052e16;
+  background: var(--blue);
+  color: #081426;
   font-weight: 500;
 }
 
 .btn:hover
 {
-  background: var(--green);
-  color: #052e16;
+  background: var(--blue);
+  color: #081426;
 }
 
 .btn.solid:hover
@@ -317,7 +317,7 @@ h2
 
 h2 .sym
 {
-  color: var(--green);
+  color: var(--blue);
   margin-right: 6px;
 }
 
@@ -330,7 +330,7 @@ h2 .sym
 
 .group-label b
 {
-  color: var(--green);
+  color: var(--blue);
   font-weight: 500;
 }
 
@@ -365,7 +365,7 @@ h2 .sym
 
 .proj:hover
 {
-  background: rgba(74,222,128,.035);
+  background: rgba(96,165,250,.035);
 }
 
 .date
@@ -391,7 +391,7 @@ h2 .sym
 
 .proj:hover .name
 {
-  color: var(--green);
+  color: var(--blue);
 }
 
 .desc
@@ -406,7 +406,7 @@ h2 .sym
 {
   display: inline-block;
   color: var(--muted);
-  border: 1px solid #2a3a30;
+  border: 1px solid #304766;
   padding: 2px 8px;
   border-radius: 3px;
   font-size: 11px;
@@ -415,8 +415,8 @@ h2 .sym
 
 .tag.green
 {
-  color: var(--green);
-  border-color: rgba(74,222,128,.4);
+  color: var(--blue);
+  border-color: rgba(96,165,250,.4);
 }
 
 .empty
@@ -519,8 +519,8 @@ td.skill
   align-items: center;
   width: 21px;
   height: 21px;
-  border: 1px solid var(--green);
-  color: var(--green);
+  border: 1px solid var(--blue);
+  color: var(--blue);
   border-radius: 3px;
   font-size: 13px;
   transition: background .15s, color .15s;
@@ -528,8 +528,8 @@ td.skill
 
 a.chk:hover
 {
-  background: var(--green);
-  color: #052e16;
+  background: var(--blue);
+  color: #081426;
 }
 
 .note
@@ -567,7 +567,7 @@ a.chk:hover
 
 a.cell:hover
 {
-  border-color: var(--green);
+  border-color: var(--blue);
 }
 
 .cell .k
@@ -616,8 +616,8 @@ footer nav a
 
 footer a.hl
 {
-  color: var(--green);
-  border-bottom: 1px solid var(--green);
+  color: var(--blue);
+  border-bottom: 1px solid var(--blue);
 }
 
 @media (max-width: 640px)
@@ -693,7 +693,7 @@ footer a.hl
   display: inline-block;
   border: 1px solid var(--line);
   background: var(--panel);
-  color: var(--green);
+  color: var(--blue);
   padding: 4px 8px;
   border-radius: 3px;
   font-size: 12px;
@@ -761,7 +761,7 @@ footer a.hl
 .legal-card h2::before
 {
   content: "$ ";
-  color: var(--green);
+  color: var(--blue);
 }
 
 .legal-card p
@@ -780,14 +780,14 @@ footer a.hl
 
 .legal-card a
 {
-  color: var(--green);
-  border-bottom: 1px solid rgba(74,222,128,.35);
+  color: var(--blue);
+  border-bottom: 1px solid rgba(96,165,250,.35);
   overflow-wrap: anywhere;
 }
 
 .legal-card code
 {
-  color: var(--green);
+  color: var(--blue);
   font-size: .95em;
 }
 
@@ -802,7 +802,7 @@ footer a.hl
 
 .legal-back a
 {
-  color: var(--green);
+  color: var(--blue);
 }
 
 @media (max-width: 640px)
@@ -858,7 +858,7 @@ footer a.hl
 .project-prompt::before
 {
   content: "$ ";
-  color: var(--green);
+  color: var(--blue);
 }
 
 .project-body > h1
@@ -883,7 +883,7 @@ footer a.hl
 
 .project-meta b
 {
-  color: var(--green);
+  color: var(--blue);
   font-weight: 500;
   margin-right: 8px;
 }
@@ -919,7 +919,7 @@ footer a.hl
 .project-content h2::before
 {
   content: "# ";
-  color: var(--green);
+  color: var(--blue);
   font-weight: 500;
 }
 
@@ -957,7 +957,7 @@ footer a.hl
 
 .project-content li::marker
 {
-  color: var(--green);
+  color: var(--blue);
 }
 
 .project-content strong
@@ -968,14 +968,14 @@ footer a.hl
 
 .project-content a
 {
-  color: var(--green);
-  border-bottom: 1px solid rgba(74,222,128,.35);
+  color: var(--blue);
+  border-bottom: 1px solid rgba(96,165,250,.35);
   overflow-wrap: anywhere;
 }
 
 .project-content code
 {
-  color: var(--green);
+  color: var(--blue);
   font-size: .92em;
   overflow-wrap: anywhere;
 }
@@ -988,7 +988,7 @@ footer a.hl
   padding: 17px;
   border: 1px solid var(--line);
   border-radius: 4px;
-  background: #0a100c;
+  background: #0b1729;
   color: var(--text);
   font: 12px/1.75 var(--mono);
 }
@@ -997,7 +997,7 @@ footer a.hl
 {
   margin: 18px 0;
   padding: 2px 0 2px 16px;
-  border-left: 2px solid var(--green);
+  border-left: 2px solid var(--blue);
   color: var(--muted);
 }
 
