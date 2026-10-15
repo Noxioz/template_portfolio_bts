@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'fr' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d0a">
+  <title>{% if page.title and page.title != "Accueil" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.resume | default: site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+  <script src="{{ '/js/navigation.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">~/portfolio-bts</a>
+      <nav aria-label="Navigation principale">
+        <a href="{{ '/' | relative_url }}#top">accueil</a>
+        <a href="{{ '/' | relative_url }}#projets">projets</a>
+        <a href="{{ '/' | relative_url }}#competences">compétences</a>
+        <a class="{% if page.url == '/mentions-legales/' %}active{% endif %}" href="{{ '/mentions-legales/' | relative_url }}">mentions légales</a>
+      </nav>
+    </div>
+  </header>
+
+  {{ content }}
+
+  <footer>
+    <div class="wrap footer-inner">
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }} — modèle sous licence MIT.</p>
+      <nav aria-label="Navigation de pied de page">
+        <a href="{{ '/' | relative_url }}#projets">projets</a>
+        <a href="{{ '/' | relative_url }}#competences">compétences</a>
+        <a href="{{ '/mentions-legales/' | relative_url }}">mentions légales</a>
+        {% if site.github_username != "" and site.github_username != "YOUR-USERNAME" %}
+          <a class="hl" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">github ↗</a>
+        {% endif %}
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

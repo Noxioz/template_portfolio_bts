@@ -1,0 +1,22 @@
+title: "Votre nom — Portfolio BTS SIO"
+url: "https://YOUR-USERNAME.github.io"
+baseurl: "/template-portfolio-bts"
+description: "Portfolio étudiant BTS SIO : formation, projets, compétences et veille."
+lang: fr
+email: ""
+linkedin: ""
+github_username: "YOUR-USERNAME"
+collections:
+  projets:
+    output: true
+    permalink: /projets/:name/
+defaults:
+  - scope:
+      path: ""
+      type: projets
+    values:
+      layout: projet
+exclude:
+  - README.md
+  - LICENSE
+future: true

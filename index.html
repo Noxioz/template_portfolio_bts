@@ -1,0 +1,51 @@
+---
+layout: default
+title: Accueil
+---
+<main id="top">
+  <div class="wrap hero">
+    <section class="term hero-term" aria-labelledby="intro-title">
+      <div class="term-bar" aria-hidden="true"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">~/portfolio-bts — zsh — 80x24</span></div>
+      <div class="term-body">
+        <p class="prompt">whoami</p><h1 id="intro-title">Votre nom</h1>
+        <p class="tagline">Étudiant·e en BTS SIO — spécialité, projets et compétences.</p>
+        <div class="block"><p class="prompt">cat status.txt</p><p class="out" id="status">En formation — à la recherche d'opportunités d'apprentissage et de stage.</p></div>
+        <div class="block"><p class="prompt">open <span class="cursor" aria-hidden="true"></span></p></div>
+        <div class="btns"><a class="btn solid" href="#projets">voir les projets</a><a class="btn" href="#contact">me contacter</a></div>
+      </div>
+    </section>
+  </div>
+  {% assign projets = site.projets | where_exp: "p", "p.afficher != false" | sort: "date" | reverse %}
+  {% assign projets_ecole = projets | where: "type", "ecole" %}
+  {% assign projets_perso = projets | where: "type", "perso" %}
+  <div class="wrap">
+    <section id="profil" class="profil"><h2><span class="sym">~/</span>profil</h2>
+      <p>Présentez votre parcours, votre spécialité (SISR ou SLAM), vos centres d'intérêt et votre projet professionnel.</p>
+      <p>Ce portfolio rassemble les travaux réalisés en formation et les projets personnels qui illustrent votre progression.</p>
+    </section>
+    <section id="projets"><h2><span class="sym">$</span>ls ~/projets</h2>
+      <p class="group-label"><b>[ scolaires ]</b> — travaux réalisés dans le cadre du BTS ({{ projets_ecole.size }})</p>
+      <div class="term project-terminal"><div class="term-bar" aria-hidden="true"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">~/projets/ecole</span></div><div class="term-body projects">
+        {% for p in projets_ecole %}<a class="proj" href="{{ p.url | relative_url }}"><span class="date">{{ p.date | date: "%m/%Y" }}</span><span class="project-main"><span class="name">{{ p.title }}</span><span class="desc">{{ p.resume }}</span></span><span class="tag">[ scolaire ]</span></a>{% endfor %}
+        {% if projets_ecole.size == 0 %}<p class="empty">Aucun projet scolaire publié pour le moment.</p>{% endif %}
+      </div></div>
+      <p class="group-label"><b>[ personnels ]</b> — réalisations et expérimentations ({{ projets_perso.size }})</p>
+      <div class="term project-terminal"><div class="term-bar" aria-hidden="true"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">~/projets/perso</span></div><div class="term-body projects">
+        {% for p in projets_perso %}<a class="proj" href="{{ p.url | relative_url }}"><span class="date">{{ p.date | date: "%m/%Y" }}</span><span class="project-main"><span class="name">{{ p.title }}</span><span class="desc">{{ p.resume }}</span></span><span class="tag green">[ perso ]</span></a>{% endfor %}
+        {% if projets_perso.size == 0 %}<p class="empty">Aucun projet personnel publié pour le moment.</p>{% endif %}
+      </div></div>
+    </section>
+    <section id="competences"><h2><span class="sym">$</span>cat competences-bts.md</h2>
+      <div class="scroll"><table><thead><tr><th rowspan="2">[ compétence ]</th>{% if projets_ecole.size > 0 %}<th class="grp" colspan="{{ projets_ecole.size }}">[ école ]</th>{% endif %}{% if projets_perso.size > 0 %}<th class="grp" colspan="{{ projets_perso.size }}">[ perso ]</th>{% endif %}</tr><tr>
+      {% for p in projets_ecole %}<th class="c col-sep"><a href="{{ p.url | relative_url }}" aria-label="Ouvrir : {{ p.title }}">{{ forloop.index }}</a></th>{% endfor %}{% for p in projets_perso %}<th class="c col-sep"><a href="{{ p.url | relative_url }}" aria-label="Ouvrir : {{ p.title }}">{{ forloop.index }}</a></th>{% endfor %}
+      </tr></thead><tbody>
+      {% for c in site.data.competences %}<tr><td class="skill">{{ c.libelle }}</td>{% for p in projets_ecole %}<td class="c">{% if p.competences contains c.code %}<a class="chk" href="{{ p.url | relative_url }}" aria-label="{{ c.libelle }} — {{ p.title }}">✓</a>{% endif %}</td>{% endfor %}{% for p in projets_perso %}<td class="c">{% if p.competences contains c.code %}<a class="chk" href="{{ p.url | relative_url }}" aria-label="{{ c.libelle }} — {{ p.title }}">✓</a>{% endif %}</td>{% endfor %}</tr>{% endfor %}
+      </tbody></table></div><p class="note"># cliquer sur une coche ouvre le projet correspondant</p>
+    </section>
+    <section id="contact"><h2><span class="sym">$</span>contact</h2><p class="contact-intro">Une question sur un projet, une proposition de stage ou une collaboration ?</p><div class="contact-list">
+      {% if site.email != "" %}<a class="cell" href="mailto:{{ site.email }}"><span class="k">[ e-mail ]</span><span class="v">{{ site.email }}</span></a>{% endif %}
+      {% if site.linkedin != "" %}<a class="cell" href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer"><span class="k">[ linkedin ]</span><span class="v">Profil LinkedIn ↗</span></a>{% endif %}
+      {% if site.github_username != "" and site.github_username != "YOUR-USERNAME" %}<a class="cell" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer"><span class="k">[ github ]</span><span class="v">github.com/{{ site.github_username }} ↗</span></a>{% endif %}
+    </div></section>
+  </div>
+</main>

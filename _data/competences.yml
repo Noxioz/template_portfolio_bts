@@ -1,0 +1,14 @@
+# Exemple de compétences du bloc 1 du référentiel BTS SIO.
+# Adaptez les libellés selon votre référentiel et vos besoins.
+- code: c1
+  libelle: "Gérer le patrimoine informatique"
+- code: c2
+  libelle: "Répondre aux incidents et aux demandes d'assistance"
+- code: c3
+  libelle: "Développer la présence en ligne de l'organisation"
+- code: c4
+  libelle: "Travailler en mode projet"
+- code: c5
+  libelle: "Mettre à disposition un service informatique"
+- code: c6
+  libelle: "Organiser son développement professionnel"

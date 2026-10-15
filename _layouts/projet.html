@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<main class="project-page">
+  <article class="term project-sheet">
+    <div class="term-bar" aria-hidden="true"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">~/projets/{{ page.title | slugify }}</span></div>
+    <div class="term-body project-body">
+      <p class="project-prompt">cat ./projet.md</p>
+      <h1>{{ page.title }}</h1>
+      <div class="project-meta"><span><b>date</b> {{ page.date | date: "%d/%m/%Y" }}</span><span><b>cadre</b> {% if page.type == "ecole" %}BTS / scolaire{% else %}personnel{% endif %}</span></div>
+      {% if page.competences and page.competences.size > 0 %}
+      <div class="project-skills"><span class="project-label">compétences</span>
+        {% for c in page.competences %}{% assign comp = site.data.competences | where: "code", c | first %}{% if comp %}<span class="comp">{{ comp.libelle }}</span>{% endif %}{% endfor %}
+      </div>{% endif %}
+      <div class="project-content">{{ content }}</div>
+    </div>
+  </article>
+</main>
+<p class="legal-back"><a href="{{ '/' | relative_url }}#projets">← Retour aux projets</a></p>
