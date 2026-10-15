@@ -21,15 +21,15 @@ title: Accueil
   <div class="wrap">
     <section id="profil" class="profil"><h2><span class="sym">~/</span>Mon profil</h2>
       <p>Je m'appelle Guillaume MASSON. Après un BAC général spécialité Mathématiques et NSI, j'ai décidé de faire un BTS SIO SISR en alternance pour améliorer mes compétences en informatique. Je vise un master en cybersécurité pour pouvoir plus tard m'orienter dans le secteur de la cybersécurité, du penstest et des réseaux.</p>
-      <p>Tout au long de ma formationN</p>
+      <p>Tout au long de ma formation, je mettrai à jour les projets que j'aurais rélisé et les compétences que j'aurai acquis.</p>
     </section>
-    <section id="projets"><h2><span class="sym">$</span>ls ~/projets</h2>
-      <p class="group-label"><b>[ scolaires ]</b> — travaux réalisés dans le cadre du BTS ({{ projets_ecole.size }})</p>
+    <section id="projets"><h2><span class="sym">$</span>Mes projets</h2>
+      <p class="group-label"><b>[ scolaires ]</b> — travaux réalisés dans le cadre du BTS SIO ({{ projets_ecole.size }})</p>
       <div class="term project-terminal"><div class="term-bar" aria-hidden="true"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">~/projets/ecole</span></div><div class="term-body projects">
         {% for p in projets_ecole %}<a class="proj" href="{{ p.url | relative_url }}"><span class="date">{{ p.date | date: "%m/%Y" }}</span><span class="project-main"><span class="name">{{ p.title }}</span><span class="desc">{{ p.resume }}</span></span><span class="tag">[ scolaire ]</span></a>{% endfor %}
         {% if projets_ecole.size == 0 %}<p class="empty">Aucun projet scolaire publié pour le moment.</p>{% endif %}
       </div></div>
-      <p class="group-label"><b>[ personnels ]</b> — réalisations et expérimentations ({{ projets_perso.size }})</p>
+      <p class="group-label"><b>[ personnels ]</b> — réalisations et expérimentations en dehors de mon cursus ({{ projets_perso.size }})</p>
       <div class="term project-terminal"><div class="term-bar" aria-hidden="true"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">~/projets/perso</span></div><div class="term-body projects">
         {% for p in projets_perso %}<a class="proj" href="{{ p.url | relative_url }}"><span class="date">{{ p.date | date: "%m/%Y" }}</span><span class="project-main"><span class="name">{{ p.title }}</span><span class="desc">{{ p.resume }}</span></span><span class="tag green">[ perso ]</span></a>{% endfor %}
         {% if projets_perso.size == 0 %}<p class="empty">Aucun projet personnel publié pour le moment.</p>{% endif %}
