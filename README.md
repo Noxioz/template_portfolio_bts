@@ -33,4 +33,4 @@ La matrice de compétences est générée automatiquement : une coche ✓ ouvre 
 - `mentions-legales.md` : modèle à personnaliser
 
 ## Licence
-Licence MIT. Vous pouvez utiliser, modifier et redistribuer le template, y compris commercialement, à condition de conserver la notice de copyright et le texte de licence. Gardez la mention de crédit `vzsca` dans le fichier `LICENSE`. Les textes, images et ressources ajoutés séparément peuvent avoir leurs propres conditions.
+Licence MIT. Vous pouvez utiliser, modifier et redistribuer le template, y compris commercialement, à condition de conserver la notice de copyright et le texte de licence. Gardez la mention de crédit `Noxioz` dans le fichier `LICENSE`. Les textes, images et ressources ajoutés séparément peuvent avoir leurs propres conditions.
