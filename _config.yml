@@ -1,11 +1,11 @@
-title: "Votre nom — Portfolio BTS SIO"
+title: "Guillaume Masson — Portfolio BTS SIO"
 url: "https://YOUR-USERNAME.github.io"
-baseurl: "/template-portfolio-bts"
+baseurl: "/template_portfolio_bts"
 description: "Portfolio étudiant BTS SIO : formation, projets, compétences et veille."
 lang: fr
-email: ""
+email: "guillaume.masson111@gmail.com"
 linkedin: ""
-github_username: "YOUR-USERNAME"
+github_username: "Noxioz"
 collections:
   projets:
     output: true
