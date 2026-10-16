@@ -3,7 +3,7 @@ title: "Configuration d'un switch DELL N1108"
 date: 2026-10-02
 type: ecole
 resume: "Configuration d'un switch DELL N1108 dans le cadre de mon alternance, avec un environnement basé sur Linux."
-competences: [c1, c2, c5]
+competences: [c1, c4, c5]
 ---
 
 ## Contexte
