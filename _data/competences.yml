@@ -2,19 +2,19 @@
 # Adaptez les libellés selon votre référentiel et vos besoins.
 - code: c1
   libelle: "Gérer le patrimoine informatique"
-  decription: "Inventorier, maintenir et administrer les équipements, logiciels et ressources informatiques."
+  description: "Inventorier, maintenir et administrer les équipements, logiciels et ressources informatiques."
 - code: c2
   libelle: "Répondre aux incidents et aux demandes d'assistance"
-  decription: "Diagnostiquer les problèmes informatiques et aider les utilisateurs à les résoudre."
+  description: "Diagnostiquer les problèmes informatiques et aider les utilisateurs à les résoudre."
 - code: c3
   libelle: "Déployer et administrer des services Web"
-  decription: "Comprendre l'hébergement Web, les serveurs et les services nécessaires pour rendre un site accessible."
+  description: "Comprendre l'hébergement Web, les serveurs et les services nécessaires pour rendre un site accessible."
 - code: c4
   libelle: "Organiser et réaliser un projet informatique"
-  decription: "Définir un objectif, planifier les étapes, réaliser le travail et vérifier le résultat."
+  description: "Définir un objectif, planifier les étapes, réaliser le travail et vérifier le résultat."
 - code: c5
   libelle: "Mettre à disposition un service informatique"
-  decription: "Installer, configurer et rendre opérationnels des services informatiques pour les utilisateurs."
+  description: "Installer, configurer et rendre opérationnels des services informatiques pour les utilisateurs."
 - code: c6
   libelle: "Organiser son développement professionnel"
-  decription: "Se former, suivre les évolutions informatiques et développer ses compétences professionnelles."
+  description: "Se former, suivre les évolutions informatiques et développer ses compétences professionnelles."
