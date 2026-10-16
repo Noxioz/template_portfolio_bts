@@ -41,7 +41,7 @@ Bonne chance !
 
 **Télécharger mon dossier de résolution :**
 
-[📦 Télécharger Défi_Bandit - V1.zip](../assets/documents/Défi_Bandit%20-%20V1.zip)
+[📦 Télécharger Défi_Bandit - V1.zip]https://noxioz.github.io/template_portfolio_bts/documents/Défi_Bandit%20-%20V1.zip
 
 ## Résultat et bilan
 
