@@ -5,7 +5,7 @@ date: 2026-10-16
 type: perso
 resume: "Résolution des 33 niveaux du jeu Bandit d'OverTheWire pour développer mes compétences Linux, en ligne de commande et en cybersécurité."
 competences: [c1, c6]
----------------------
+---
 
 ## Contexte
 
