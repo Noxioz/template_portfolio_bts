@@ -6,23 +6,23 @@ resume: "Création et personnalisation d'un portfolio en ligne pour présenter m
 competences: [c3, c6]
 ---
 
-# Contexte
-Dans le cadre de mon parcours en BTS SIO, j'ai réalisé un portfolio afin de présenter mon profil, mes compétences et les projets sur lesquels je travaille.
+## Contexte
+Dans le cadre de mon parcours en BTS SIO, j'ai réalisé un portfolio GitHub afin de présenter mon profil, mes compétences et les projets sur lesquels je travaille.
 
-# Objectifs
+## Objectifs
 - Créer un portfolio accessible en ligne.
 - Présenter mon parcours et mes compétences.
 - Découvrir l'utilisation de GitHub pour héberger et mettre à jour un site web.
 
-# Réalisation
+## Réalisation
 J'ai personnalisé un modèle de portfolio, modifié les informations de présentation et adapté la configuration du site pour préparer sa publication sur GitHub Pages.
 
-# Outils et compétences
+## Outils et compétences
 - HTML
 - CSS
 - GitHub
 - GitHub Pages
 - Personnalisation d'un site web
 
-# Résultat et bilan
-Ce projet m'a permis de découvrir comment organiser les fichiers d'un site web, modifier son contenu et préparer sa publication en ligne. Il me servira à présenter progressivement les projets réalisés pendant mon BTS SIO.
+## Résultat et bilan
+Ce projet m'a permis de découvrir comment organiser les fichiers d'un site web, modifier son contenu et préparer sa publication en ligne. Il me servira à présenter progressivement les projets réalisés dans le cadre de mon BTS SIO ou de mon alternance, ainsi que mes projets personnels.
