@@ -7,13 +7,13 @@
   libelle: "Répondre aux incidents et aux demandes d'assistance"
   description: "Diagnostiquer les problèmes informatiques et aider les utilisateurs à les résoudre."
 - code: c3
-  libelle: "Déployer et administrer des services Web"
+  libelle: "Développer la présence en ligne de l'organisation"
   description: "Comprendre l'hébergement Web, les serveurs et les services nécessaires pour rendre un site accessible."
 - code: c4
-  libelle: "Organiser et réaliser un projet informatique"
+  libelle: "Travailler en mode projet"
   description: "Définir un objectif, planifier les étapes, réaliser le travail et vérifier le résultat."
 - code: c5
-  libelle: "Mettre à disposition un service informatique"
+  libelle: "Mettre à disposition des utilisateurs un service informatique"
   description: "Installer, configurer et rendre opérationnels des services informatiques pour les utilisateurs."
 - code: c6
   libelle: "Organiser son développement professionnel"
