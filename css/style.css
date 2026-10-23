@@ -1199,14 +1199,27 @@ a.cell:hover {
 body {
   background:
     radial-gradient(
-      ellipse at 8% 12%,
-      rgba(34, 211, 238, 0.07),
-      transparent 36%
+      ellipse at 10% 15%,
+      rgba(34, 211, 238, 0.16),
+      transparent 42%
     ),
     radial-gradient(
-      ellipse at 92% 52%,
-      rgba(34, 211, 238, 0.045),
-      transparent 32%
+      ellipse at 90% 55%,
+      rgba(34, 211, 238, 0.10),
+      transparent 38%
     ),
-    var(--bg);
+    #07131C;
 }
+.term {
+  border-color: rgba(34, 211, 238, 0.45);
+  box-shadow:
+    0 0 8px rgba(34, 211, 238, 0.12),
+    0 0 24px rgba(34, 211, 238, 0.08);
+}
+.term:hover {
+  border-color: #22D3EE;
+  box-shadow:
+    0 0 12px rgba(34, 211, 238, 0.35),
+    0 0 32px rgba(34, 211, 238, 0.20);
+}
+    
