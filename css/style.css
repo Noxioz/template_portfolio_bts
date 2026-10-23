@@ -1195,3 +1195,18 @@ a.cell:hover {
     transform: none;
   }
 }
+
+body {
+  background:
+    radial-gradient(
+      ellipse at 8% 12%,
+      rgba(34, 211, 238, 0.07),
+      transparent 36%
+    ),
+    radial-gradient(
+      ellipse at 92% 52%,
+      rgba(34, 211, 238, 0.045),
+      transparent 32%
+    ),
+    var(--bg);
+}
